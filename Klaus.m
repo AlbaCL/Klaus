@@ -19,8 +19,8 @@
 (* ::Text::Initialization:: *)
 (*We tested this algorithm to find the graph representation of the GHZ states of any number of parties and local dimension*)
 (**)
-(*|GHZ(n,d)\[RightAngleBracket]=1/Sqrt[d^n]*)
-(*\!\(\*UnderoverscriptBox[\(\[Sum]\), \(i = 0\), \(d - 1\)]\)|Subscript[i, 1]...\[InvisiblePrefixScriptBase]Subscript[i, n]\[RightAngleBracket] *)
+(*|GHZ(n,d)\[RightAngleBracket]=1/Sqrt[d^n] \[Sum]_(i = 0)^(d - 1)|Subscript[i, 1]...\[InvisiblePrefixScriptBase]Subscript[i, n]\[RightAngleBracket] *)
+(**)
 (*and highly entangled tri-partite states with different Schmidt Rank Vector (SRV). For states with an odd number of parties, we look for the heralded state, i.e., we tensor-product a |0\[RightAngleBracket] state.*)
 
 
@@ -96,7 +96,7 @@ TimePMgeneration=t1-t0;
 
 
 (* ::Text::Initialization:: *)
-(*Now we have the list with all possible PM with their corresponding weights and all possible color combinations created by the edges.*)
+(*Now we have the list with all possible PM with their corresponding weights and all possible color combinations created by the edges.*)*)
 (*The next step consist of identifying those PM that generate the same basis elements and split those basis elements that appear in the target state.*)
 
 
@@ -147,14 +147,9 @@ Print["\[CapitalDelta]t = ",TimePM/60," min"]
 (**)
 (*- Obstruction clauses: we can not encode the possible interference between different PM, but we can impose that for each basis element that do not appear in the target state, if all PM except one are False, then the remaining one has to be False as well. This is equivalent to the following clause*)
 (**)
-(*(Subscript[PM, 1]\[And]*)
-(*\!\(\*OverscriptBox[*)
-(*SubscriptBox[\(PM\), \(2\)], \(_\)]\)\[And]...\[And]*)
-(*\!\(\*OverscriptBox[*)
-(*SubscriptBox[\(PM\), \(p\)], \(_\)]\))=False*)
+(*(Subscript[PM, 1]\[And]( ! Subscript[PM, 2])\[And]...\[And]( ! Subscript[PM, 2])) = False*)
 (**)
-(*This clause shows that if all PM except one are False (therefore, *)
-(*\!\(\*OverscriptBox[\(PM\), \(_\)]\)=True) then, to obtain False, the remaining PM must be False. We have to ask the same for all combinations of all PM except one being False.*)
+(*This clause shows that if all PM except one are False (therefore, !PM =True) then, to obtain False, the remaining PM must be False. We have to ask the same for all combinations of all PM except one being False.*)
 (*Since we want to solve this problem using a SAT solver (correct outputs evaluate to True), we will ask for the negation of each of these clauses (so the expression will be True when the requirements are fulfilled).*)
 (*Other possibilities, like two of the PM exist, evaluate the expression to True, since we do not know if it is possible a numerical cancelation between the weights.*)
 
