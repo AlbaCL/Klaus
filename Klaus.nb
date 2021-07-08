@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    113177,       2393]
-NotebookOptionsPosition[    110100,       2291]
-NotebookOutlinePosition[    110481,       2307]
-CellTagsIndexPosition[    110438,       2304]
+NotebookDataLength[    116037,       2503]
+NotebookOptionsPosition[    111472,       2346]
+NotebookOutlinePosition[    111853,       2362]
+CellTagsIndexPosition[    111810,       2359]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -21,23 +21,27 @@ Notebook[{
 
 Cell[CellGroupData[{
 Cell["Klaus", "Title",
+ InitializationCell->True,
  CellChangeTimes->{{3.83474066012204*^9, 3.8347406618031206`*^9}}],
 
 Cell["\<\
 Quantum optical setup optimization assisted by propositional logic\
 \>", "Subtitle",
+ InitializationCell->True,
  CellChangeTimes->{{3.834740676261134*^9, 3.8347406940175095`*^9}, {
   3.834749745004116*^9, 3.834749763726884*^9}}],
 
 Cell[CellGroupData[{
 
 Cell["Setting the problem", "Section",
+ InitializationCell->True,
  CellChangeTimes->{{3.828637692310732*^9, 3.8286376977252903`*^9}},
  ExpressionUUID -> "a07a82a8-17b9-4d0c-8e61-972f96da3089"],
 
 Cell[CellGroupData[{
 
 Cell["Target state", "Subsection",
+ InitializationCell->True,
  CellChangeTimes->{{3.834742121413145*^9, 3.834742124074437*^9}}],
 
 Cell[TextData[{
@@ -64,12 +68,12 @@ of any number of parties and local dimension\n\n",
         SubscriptBox["i", "1"], "..."}], 
        RowBox[{"\[InvisiblePrefixScriptBase]", 
         SubscriptBox["i", "n"]}]}]}]}], "\[RightAngleBracket]"}], 
-   TraditionalForm]],
-  FormatType->"TraditionalForm"],
+   TraditionalForm]]],
  " \nand highly entangled tri-partite states with different Schmidt Rank \
 Vector (SRV). For states with an odd number of parties, we look for the \
 heralded state, i.e., we tensor-product a |0\[RightAngleBracket] state."
 }], "Text",
+ InitializationCell->True,
  CellChangeTimes->{{3.8347407986876917`*^9, 3.834740845484509*^9}, {
   3.834740894832101*^9, 3.834741016911101*^9}, {3.8347410485048285`*^9, 
   3.8347413720552435`*^9}, {3.834741840697282*^9, 3.834741852764527*^9}, {
@@ -158,6 +162,7 @@ Cell[BoxData[{
       RowBox[{"7", ",", "4", ",", "1"}], "}"}], ",", 
      RowBox[{"{", 
       RowBox[{"8", ",", "4", ",", "1"}], "}"}]}], "}"}]}], ";"}]}], "Input",
+ InitializationCell->True,
  CellChangeTimes->{{3.8314618773947997`*^9, 3.831461983454973*^9}, {
    3.831462140539141*^9, 3.831462141528133*^9}, {3.831464062102363*^9, 
    3.8314640685973577`*^9}, {3.8314746955395184`*^9, 3.831474720553853*^9}, {
@@ -174,6 +179,7 @@ Cell[BoxData[{
    3.834741396537224*^9, 3.8347421350281487`*^9}],
 
 Cell["Select the target state:", "Text",
+ InitializationCell->True,
  CellChangeTimes->{{3.8347421469600663`*^9, 3.834742153475909*^9}}],
 
 Cell[BoxData[
@@ -181,6 +187,7 @@ Cell[BoxData[
   RowBox[{"state", " ", "=", " ", 
    RowBox[{"GHZ", "[", 
     RowBox[{"4", ",", "3"}], "]"}]}], ";"}]], "Input",
+ InitializationCell->True,
  CellChangeTimes->{{3.8347413878052826`*^9, 3.8347413945970373`*^9}, {
    3.8347416571388865`*^9, 3.8347417106750603`*^9}, {3.8347453332634225`*^9, 
    3.834745335728074*^9}, 3.8347495941092105`*^9, {3.8347498546400905`*^9, 
@@ -190,6 +197,7 @@ Cell["\<\
 The graph will contain as many vertices as number of parties (n) and the \
 possible colors for each edge will be determined by the local dimension (d).\
 \>", "Text",
+ InitializationCell->True,
  CellChangeTimes->{{3.834742165309769*^9, 3.8347422627650146`*^9}}],
 
 Cell[CellGroupData[{
@@ -233,6 +241,7 @@ Cell[BoxData[{
  RowBox[{"Print", "[", " ", 
   RowBox[{"\"\<# basis elements = \>\"", ",", 
    RowBox[{"Length", "[", "state", "]"}]}], "]"}]}], "Input",
+ InitializationCell->True,
  CellChangeTimes->{{3.8285568905167108`*^9, 3.8285568924855337`*^9}, 
    3.8285569349300933`*^9, {3.8285601952623763`*^9, 3.8285602090625844`*^9}, 
    3.8285604746687813`*^9, {3.828560621695086*^9, 3.828560622071725*^9}, {
@@ -328,6 +337,7 @@ Cell[BoxData[
   SequenceForm[
   "State basis elements: ", {{0, 0, 0, 0}, {1, 1, 1, 1}, {2, 2, 2, 2}}],
   Editable->False]], "Print",
+ InitializationCell->True,
  CellChangeTimes->{
   3.8286972389629955`*^9, {3.8286972771228876`*^9, 3.8286973040794477`*^9}, {
    3.828697373309499*^9, 3.8286973925091314`*^9}, 3.8286989826399317`*^9, {
@@ -384,6 +394,7 @@ Cell[BoxData[
   RowBox[{"\<\"number of parties (n) = \"\>", "\[InvisibleSpace]", "4"}],
   SequenceForm["number of parties (n) = ", 4],
   Editable->False]], "Print",
+ InitializationCell->True,
  CellChangeTimes->{
   3.8286972389629955`*^9, {3.8286972771228876`*^9, 3.8286973040794477`*^9}, {
    3.828697373309499*^9, 3.8286973925091314`*^9}, 3.8286989826399317`*^9, {
@@ -440,6 +451,7 @@ Cell[BoxData[
   RowBox[{"\<\"number of colors (d) = \"\>", "\[InvisibleSpace]", "3"}],
   SequenceForm["number of colors (d) = ", 3],
   Editable->False]], "Print",
+ InitializationCell->True,
  CellChangeTimes->{
   3.8286972389629955`*^9, {3.8286972771228876`*^9, 3.8286973040794477`*^9}, {
    3.828697373309499*^9, 3.8286973925091314`*^9}, 3.8286989826399317`*^9, {
@@ -496,6 +508,7 @@ Cell[BoxData[
   RowBox[{"\<\"# basis elements = \"\>", "\[InvisibleSpace]", "3"}],
   SequenceForm["# basis elements = ", 3],
   Editable->False]], "Print",
+ InitializationCell->True,
  CellChangeTimes->{
   3.8286972389629955`*^9, {3.8286972771228876`*^9, 3.8286973040794477`*^9}, {
    3.828697373309499*^9, 3.8286973925091314`*^9}, 3.8286989826399317`*^9, {
@@ -553,6 +566,7 @@ Cell[BoxData[
 Cell[CellGroupData[{
 
 Cell["Generate all Perfect Matchings (PM)", "Subsection",
+ InitializationCell->True,
  CellChangeTimes->{{3.831062992045633*^9, 3.831062993547321*^9}, {
   3.831129758035858*^9, 3.8311297663083076`*^9}, {3.8311483038593845`*^9, 
   3.831148311202926*^9}, {3.831460653895191*^9, 3.8314606574323273`*^9}, {
@@ -575,6 +589,7 @@ example, a color combination of [blue, blue, red, green] generates the state \
 generates it. The basis state amplitude will be determined by the sum of all \
 PM that generate that state.\
 \>", "Text",
+ InitializationCell->True,
  CellChangeTimes->{{3.8347424479868326`*^9, 3.834742453543836*^9}, {
   3.8347425047094803`*^9, 3.834742578128398*^9}, {3.83474260962731*^9, 
   3.8347427240484037`*^9}, {3.834742756512756*^9, 3.8347429313374805`*^9}}],
@@ -583,22 +598,23 @@ Cell[BoxData[{
  RowBox[{
   RowBox[{
    RowBox[{"t0", " ", "=", " ", 
-    RowBox[{"AbsoluteTime", "[", "]"}]}], ";"}], "\n", "\[IndentingNewLine]", 
+    RowBox[{"AbsoluteTime", "[", "]"}]}], ";"}], "\[IndentingNewLine]", 
+  "\[IndentingNewLine]", 
   RowBox[{"(*", " ", 
    RowBox[{"Name", " ", "the", " ", "vertices", " ", "with", " ", "letters"}],
-    " ", "*)"}]}], "\[IndentingNewLine]", 
+    " ", "*)"}]}], "\n", 
  RowBox[{
   RowBox[{
    RowBox[{"set", "=", 
     RowBox[{"FromLetterNumber", "[", 
-     RowBox[{"Range", "[", "pathmax", "]"}], "]"}]}], ";"}], "\n", 
+     RowBox[{"Range", "[", "pathmax", "]"}], "]"}]}], ";"}], 
+  "\[IndentingNewLine]", 
   RowBox[{"(*", " ", 
    RowBox[{
    "Generate", " ", "all", " ", "possible", " ", "Perfect", " ", "Matchings", 
     " ", 
     RowBox[{"(", 
-     RowBox[{"without", " ", "colors"}], ")"}]}], " ", 
-   "*)"}]}], "\[IndentingNewLine]", 
+     RowBox[{"without", " ", "colors"}], ")"}]}], " ", "*)"}]}], "\n", 
  RowBox[{
   RowBox[{
    RowBox[{"PMpaths", "=", 
@@ -620,12 +636,12 @@ Cell[BoxData[{
                RowBox[{"{", "pathmax", "}"}]}], "]"}]}], ")"}]}], "]"}], 
          "}"}], ",", 
         RowBox[{"{", 
-         RowBox[{"-", "3"}], "}"}]}], "]"}], ",", "1"}], "]"}]}], ";"}], "\n", 
+         RowBox[{"-", "3"}], "}"}]}], "]"}], ",", "1"}], "]"}]}], ";"}], 
+  "\[IndentingNewLine]", 
   RowBox[{"(*", " ", 
    RowBox[{
    "Generate", " ", "all", " ", "possible", " ", "color", " ", "combinations",
-     " ", "of", " ", "the", " ", "vertices"}], " ", 
-   "*)"}]}], "\[IndentingNewLine]", 
+     " ", "of", " ", "the", " ", "vertices"}], " ", "*)"}]}], "\n", 
  RowBox[{
   RowBox[{"cols", "=", 
    RowBox[{"Tuples", "[", 
@@ -644,20 +660,23 @@ Cell[BoxData[{
          RowBox[{"[", 
           RowBox[{"All", ",", 
            RowBox[{"Ordering", "@", "#"}]}], "]"}], "]"}], "&"}], "/@", 
-       "PMpaths"}], ",", "1"}], "]"}]}], ";", " ", 
-   RowBox[{"(*", " ", 
+       "PMpaths"}], ",", "1"}], "]"}]}], ";"}], " ", 
+  RowBox[{"(*", " ", 
+   RowBox[{
+   "List", " ", "with", " ", "all", " ", "vertex", " ", "colorings", " ", 
+    "obtained", " ", "from", " ", "all", " ", "PM"}], " ", "*)"}], 
+  "\[IndentingNewLine]", 
+  RowBox[{"(*", " ", 
+   RowBox[{
+    RowBox[{"Unique", " ", "vertex", " ", "colorings"}], ",", " ", 
     RowBox[{
-    "List", " ", "with", " ", "all", " ", "vertex", " ", "colorings", " ", 
-     "obtained", " ", "from", " ", "all", " ", "PM"}], " ", "*)"}], "\n", 
-   RowBox[{"(*", " ", 
-    RowBox[{
-     RowBox[{"Unique", " ", "vertex", " ", "colorings"}], ",", " ", 
-     RowBox[{
-      RowBox[{"i", ".", "e", ".", " ", "deleting"}], " ", "the", " ", 
-      "duplicates"}]}], " ", "*)"}], "\[IndentingNewLine]", 
+     RowBox[{"i", ".", "e", ".", " ", "deleting"}], " ", "the", " ", 
+     "duplicates"}]}], " ", "*)"}]}], "\n", 
+ RowBox[{
+  RowBox[{
    RowBox[{"UniqueVertexColorings", "=", 
-    RowBox[{"DeleteDuplicates", "[", "VertexColorings", "]"}]}], ";"}], 
-  "\[IndentingNewLine]", "\n", 
+    RowBox[{"DeleteDuplicates", "[", "VertexColorings", "]"}]}], ";"}], "\n", 
+  "\[IndentingNewLine]", 
   RowBox[{"(*", " ", 
    RowBox[{
    "Assign", " ", "a", " ", "vertex", " ", "coloring", " ", "to", " ", "each",
@@ -712,11 +731,11 @@ Cell[BoxData[{
               RowBox[{"{", 
                RowBox[{"1", ",", "3"}], "}"}]}], "}"}]}], "]"}], "&"}], ",", 
          "AllColoredPMsEasyEncoding"}], "]"}], ",", "1"}], "]"}], "]"}]}], 
-   ";"}], "\n", 
+   ";"}], "\[IndentingNewLine]", 
   RowBox[{"(*", " ", 
    RowBox[{
    "Translate", " ", "the", " ", "lists", " ", "into", " ", "weights"}], " ", 
-   "*)"}]}], "\[IndentingNewLine]", 
+   "*)"}]}], "\n", 
  RowBox[{
   RowBox[{"If", "[", 
    RowBox[{
@@ -799,6 +818,7 @@ Cell[BoxData[{
  RowBox[{
   RowBox[{"TimePMgeneration", "=", 
    RowBox[{"t1", "-", "t0"}]}], ";"}]}], "Input",
+ InitializationCell->True,
  CellChangeTimes->{{3.830955378229126*^9, 3.830955403535102*^9}, {
    3.8310544603609095`*^9, 3.8310545941245127`*^9}, {3.8310547305195436`*^9, 
    3.831054744727934*^9}, {3.831054786338956*^9, 3.831054893177637*^9}, {
@@ -820,6 +840,7 @@ and all possible color combinations created by the edges.
 The next step consist of identifying those PM that generate the same basis \
 elements and split those basis elements that appear in the target state.\
 \>", "Text",
+ InitializationCell->True,
  CellChangeTimes->{{3.8347433170476794`*^9, 3.8347434212210503`*^9}, {
   3.834743625399601*^9, 3.834743652625965*^9}}],
 
@@ -943,6 +964,7 @@ Cell[BoxData[{
  RowBox[{
   RowBox[{"TimePMstate", "=", 
    RowBox[{"t1", "-", "t0"}]}], ";"}]}], "Input",
+ InitializationCell->True,
  CellChangeTimes->{{3.830955378229126*^9, 3.830955403535102*^9}, {
    3.8310544603609095`*^9, 3.8310545941245127`*^9}, {3.8310547305195436`*^9, 
    3.831054744727934*^9}, {3.831054786338956*^9, 3.831054893177637*^9}, {
@@ -990,6 +1012,7 @@ Cell[BoxData[{
  RowBox[{"Print", "[", 
   RowBox[{"\"\<\[CapitalDelta]t = \>\"", ",", 
    RowBox[{"TimePM", "/", "60"}], ",", "\"\< min\>\""}], "]"}]}], "Input",
+ InitializationCell->True,
  CellChangeTimes->{{3.830955378229126*^9, 3.830955403535102*^9}, {
    3.8310544603609095`*^9, 3.8310545941245127`*^9}, {3.8310547305195436`*^9, 
    3.831054744727934*^9}, {3.831054786338956*^9, 3.831054893177637*^9}, {
@@ -1015,6 +1038,7 @@ Cell[BoxData[
   RowBox[{"\<\"Number of PM: \"\>", "\[InvisibleSpace]", "3"}],
   SequenceForm["Number of PM: ", 3],
   Editable->False]], "Print",
+ InitializationCell->True,
  CellChangeTimes->{
   3.830955405654499*^9, 3.83105362097977*^9, 3.8310543263660083`*^9, {
    3.8310544714274936`*^9, 3.8310545216237926`*^9}, 3.83105459554259*^9, 
@@ -1059,6 +1083,7 @@ Cell[BoxData[
    "\[InvisibleSpace]", "243"}],
   SequenceForm["Number of PM with all color combinations: ", 243],
   Editable->False]], "Print",
+ InitializationCell->True,
  CellChangeTimes->{
   3.830955405654499*^9, 3.83105362097977*^9, 3.8310543263660083`*^9, {
    3.8310544714274936`*^9, 3.8310545216237926`*^9}, 3.83105459554259*^9, 
@@ -1103,6 +1128,7 @@ Cell[BoxData[
    "\[InvisibleSpace]", "81"}],
   SequenceForm["Number of different PM (= # of basis elements): ", 81],
   Editable->False]], "Print",
+ InitializationCell->True,
  CellChangeTimes->{
   3.830955405654499*^9, 3.83105362097977*^9, 3.8310543263660083`*^9, {
    3.8310544714274936`*^9, 3.8310545216237926`*^9}, 3.83105459554259*^9, 
@@ -1147,6 +1173,7 @@ Cell[BoxData[
    "54"}],
   SequenceForm["Total number of weights (edges): ", 54],
   Editable->False]], "Print",
+ InitializationCell->True,
  CellChangeTimes->{
   3.830955405654499*^9, 3.83105362097977*^9, 3.8310543263660083`*^9, {
    3.8310544714274936`*^9, 3.8310545216237926`*^9}, 3.83105459554259*^9, 
@@ -1193,6 +1220,7 @@ Cell[BoxData[
   SequenceForm[
   "\[CapitalDelta]t = ", 0.0009327716666666667`5.89844159395261, " min"],
   Editable->False]], "Print",
+ InitializationCell->True,
  CellChangeTimes->{
   3.830955405654499*^9, 3.83105362097977*^9, 3.8310543263660083`*^9, {
    3.8310544714274936`*^9, 3.8310545216237926`*^9}, 3.83105459554259*^9, 
@@ -1237,6 +1265,7 @@ Cell[BoxData[
 Cell[CellGroupData[{
 
 Cell["Logic", "Subsection",
+ InitializationCell->True,
  CellChangeTimes->{{3.828637707638624*^9, 3.828637708242789*^9}},
  ExpressionUUID -> "82c10cfd-d648-4854-8a7c-a7bbd312d660"],
 
@@ -1266,8 +1295,7 @@ in the target state. Therefore, for each of these elements,\n\n",
       RowBox[{
        SubscriptBox["PM", "1"], "\[Or]", 
        SubscriptBox["PM", "2"], "\[Or]"}], "..."}], "\[Or]", 
-     SubscriptBox["PM", "p"]}], "=", "True"}], TraditionalForm]],
-  FormatType->"TraditionalForm"],
+     SubscriptBox["PM", "p"]}], "=", "True"}], TraditionalForm]]],
  ", \n\n",
  Cell[BoxData[
   FormBox[
@@ -1294,8 +1322,7 @@ in the target state. Therefore, for each of these elements,\n\n",
           SubscriptBox["PM", "2"], "\[Or]"}], "..."}], "\[Or]", 
         SubscriptBox["PM", "p"]}], ")"}], 
       RowBox[{"basis", " ", 
-       SubscriptBox["element", "L"]}]]}], "=", "True"}], TraditionalForm]],
-  FormatType->"TraditionalForm"],
+       SubscriptBox["element", "L"]}]]}], "=", "True"}], TraditionalForm]]],
  "\n\n- Obstruction clauses: we can not encode the possible interference \
 between different PM, but we can impose that for each basis element that do \
 not appear in the target state, if all PM except one are False, then the \
@@ -1313,8 +1340,7 @@ clause\n\n",
          SubscriptBox["PM", "2"], "_"], "\[And]"}], "..."}], "\[And]", 
       OverscriptBox[
        SubscriptBox["PM", "p"], "_"]}], ")"}], "=", "False"}], 
-   TraditionalForm]],
-  FormatType->"TraditionalForm"],
+   TraditionalForm]]],
  "\n\nThis clause shows that if all PM except one are False (therefore, ",
  Cell[BoxData[
   FormBox[
@@ -1328,6 +1354,7 @@ True when the requirements are fulfilled).\nOther possibilities, like two of \
 the PM exist, evaluate the expression to True, since we do not know if it is \
 possible a numerical cancelation between the weights."
 }], "Text",
+ InitializationCell->True,
  CellChangeTimes->{{3.834744080767655*^9, 3.834744106641702*^9}, {
   3.8347441744648285`*^9, 3.834744355528432*^9}, {3.8347444035060773`*^9, 
   3.8347451438965597`*^9}, {3.8347451798566723`*^9, 3.8347451998387637`*^9}, {
@@ -1430,6 +1457,7 @@ Cell[BoxData[{
   RowBox[{"\"\<\[CapitalDelta]t = \>\"", ",", 
    RowBox[{"TimeKlauses", "/", "60"}], ",", "\"\< min\>\""}], 
   "]"}], "\[IndentingNewLine]"}], "Input",
+ InitializationCell->True,
  CellChangeTimes->{{3.831059135988624*^9, 3.8310591597807274`*^9}, {
    3.831059233147565*^9, 3.8310592897367573`*^9}, {3.8310593199275208`*^9, 
    3.8310593291814218`*^9}, {3.8310599103223686`*^9, 3.831059910507539*^9}, {
@@ -1470,6 +1498,7 @@ Cell[BoxData[
   RowBox[{"\<\"Total number of clauses: \"\>", "\[InvisibleSpace]", "237"}],
   SequenceForm["Total number of clauses: ", 237],
   Editable->False]], "Print",
+ InitializationCell->True,
  CellChangeTimes->{
   3.8311495504181447`*^9, 3.8311498534897757`*^9, 3.8311499934300814`*^9, 
    3.8311501612994757`*^9, 3.8311503141122255`*^9, 3.8311507989657984`*^9, 
@@ -1503,6 +1532,7 @@ Cell[BoxData[
    "234"}],
   SequenceForm["Total number of obstructions: ", 234],
   Editable->False]], "Print",
+ InitializationCell->True,
  CellChangeTimes->{
   3.8311495504181447`*^9, 3.8311498534897757`*^9, 3.8311499934300814`*^9, 
    3.8311501612994757`*^9, 3.8311503141122255`*^9, 3.8311507989657984`*^9, 
@@ -1536,6 +1566,7 @@ Cell[BoxData[
    "0.00026617`5.654855348479319", "\[InvisibleSpace]", "\<\" min\"\>"}],
   SequenceForm["\[CapitalDelta]t = ", 0.00026617`5.654855348479319, " min"],
   Editable->False]], "Print",
+ InitializationCell->True,
  CellChangeTimes->{
   3.8311495504181447`*^9, 3.8311498534897757`*^9, 3.8311499934300814`*^9, 
    3.8311501612994757`*^9, 3.8311503141122255`*^9, 3.8311507989657984`*^9, 
@@ -1569,6 +1600,7 @@ Cell[BoxData[
 Cell[CellGroupData[{
 
 Cell["Compute the weights that generate the state ", "Subsection",
+ InitializationCell->True,
  CellChangeTimes->{{3.8286377239247093`*^9, 3.828637733206765*^9}, {
    3.831204898768972*^9, 3.831204923258934*^9}, 3.8314607298970003`*^9, {
    3.834748305151391*^9, 3.8347483203799458`*^9}},
@@ -1578,6 +1610,7 @@ Cell["\<\
 To compute what are the weights that generate the state. We will use this \
 function at the very end of Klaus algorithm.\
 \>", "Text",
+ InitializationCell->True,
  CellChangeTimes->{{3.834748345976244*^9, 3.8347483840950017`*^9}}],
 
 Cell[BoxData[{
@@ -1603,6 +1636,7 @@ Cell[BoxData[{
   RowBox[{"TotalLoss", "=", 
    RowBox[{"(", 
     RowBox[{"1", "-", "Fidelity"}], ")"}]}], ";"}]}], "Input",
+ InitializationCell->True,
  CellChangeTimes->{{3.8286373098489923`*^9, 3.828637319359046*^9}, {
    3.82863738118167*^9, 3.8286373816161313`*^9}, {3.8286376433758774`*^9, 
    3.8286376447775545`*^9}, {3.8286377130567408`*^9, 3.828637714511885*^9}, {
@@ -1620,6 +1654,7 @@ Cell[BoxData[{
 Cell[CellGroupData[{
 
 Cell["SAT", "Section",
+ InitializationCell->True,
  CellChangeTimes->{{3.8311513841001673`*^9, 3.831151387477419*^9}, 
    3.8347465788320065`*^9}],
 
@@ -1631,6 +1666,7 @@ The SAT instance with the biggest number of False edges will be the minimal \
 solution. However, finding those instances require on average more time than \
 the heuristic algorithm that we propose in the next section.\
 \>", "Text",
+ InitializationCell->True,
  CellChangeTimes->{{3.834746625190811*^9, 3.834746797940159*^9}}],
 
 Cell[CellGroupData[{
@@ -1653,11 +1689,13 @@ Cell[BoxData[{
  RowBox[{"Print", "[", 
   RowBox[{"\"\<\[CapitalDelta]t = \>\"", ",", 
    RowBox[{"TimeFullSAT", "/", "60"}]}], "]"}]}], "Input",
+ InitializationCell->True,
  CellChangeTimes->{{3.831151392061366*^9, 3.8311513976733274`*^9}, {
   3.83115143489968*^9, 3.8311514629893117`*^9}, {3.834746602949561*^9, 
   3.8347466172181935`*^9}, {3.834746816077131*^9, 3.8347468587894115`*^9}}],
 
 Cell[BoxData["True"], "Output",
+ InitializationCell->True,
  CellChangeTimes->{3.831151398166104*^9, 3.831151585064329*^9, 
   3.831151659447939*^9, 3.831209686866721*^9, 3.831306939835101*^9, 
   3.8347468605510435`*^9, 3.8347492510868425`*^9, 3.834749602153723*^9, 
@@ -1669,6 +1707,7 @@ Cell[BoxData[
    "0.0001333366666666667`5.354645837714248"}],
   SequenceForm["\[CapitalDelta]t = ", 0.0001333366666666667`5.354645837714248],
   Editable->False]], "Print",
+ InitializationCell->True,
  CellChangeTimes->{3.8311515850695357`*^9, 3.8311516594560413`*^9, 
   3.831209686872889*^9, 3.8313069398432465`*^9, 3.8347468605593367`*^9, 
   3.8347492510948477`*^9, 3.834749602160469*^9, 3.8347497765625896`*^9, 
@@ -1679,6 +1718,7 @@ Cell[BoxData[
 Cell[CellGroupData[{
 
 Cell["Klaus algorithm", "Section",
+ InitializationCell->True,
  CellChangeTimes->{{3.830802959598922*^9, 3.8308029638814487`*^9}, {
    3.834746871417601*^9, 3.8347468747855406`*^9}, 3.8347472603896985`*^9}],
 
@@ -1701,6 +1741,7 @@ this edge is removed from the pool of available edges.
 then it proceeds to find the weights of these edges to generate the target \
 state by minimizing the infidelity loss function.\
 \>", "Text",
+ InitializationCell->True,
  CellChangeTimes->{{3.8347471333341675`*^9, 3.834747258180236*^9}, {
   3.834747402858841*^9, 3.834747625522441*^9}, {3.8347476905113754`*^9, 
   3.834747720174451*^9}, {3.834748231641591*^9, 3.8347482750705576`*^9}}],
@@ -2043,6 +2084,7 @@ Cell[BoxData[{
      RowBox[{
      "TimePM", "+", "TimeKlauses", "+", "TimeLogicOpt", "+", "TimeOpt"}], 
      ")"}], "/", "60"}], ",", "\"\< min\>\""}], "]"}]}], "Input",
+ InitializationCell->True,
  CellChangeTimes->{{3.8308034883771353`*^9, 3.830803640037247*^9}, {
    3.830803700314139*^9, 3.8308038542768235`*^9}, {3.830803916736555*^9, 
    3.8308039963028917`*^9}, {3.830804042303156*^9, 3.830804045838134*^9}, {
@@ -2085,6 +2127,7 @@ Cell[BoxData[{
 Cell[CellGroupData[{
 
 Cell[BoxData["\<\"Logic reduction completed.\"\>"], "Print",
+ InitializationCell->True,
  CellChangeTimes->{
   3.8313104983556857`*^9, 3.8313105650176716`*^9, 3.8313106000589523`*^9, {
    3.831310657484271*^9, 3.8313106819677787`*^9}, 3.8313107252907157`*^9, 
@@ -2104,6 +2147,7 @@ Cell[BoxData[
   "Solution = ", 6, "/", 54, " weights, \[CapitalDelta]t = ", 
    0.001378875`6.369221141476196, " min"],
   Editable->False]], "Print",
+ InitializationCell->True,
  CellChangeTimes->{
   3.8313104983556857`*^9, 3.8313105650176716`*^9, 3.8313106000589523`*^9, {
    3.831310657484271*^9, 3.8313106819677787`*^9}, 3.8313107252907157`*^9, 
@@ -2113,6 +2157,7 @@ Cell[BoxData[
    3.8347498021165657`*^9}, {3.834749881978837*^9, 3.834749902413082*^9}}],
 
 Cell[BoxData["\<\"Optimization completed. \"\>"], "Print",
+ InitializationCell->True,
  CellChangeTimes->{
   3.8313104983556857`*^9, 3.8313105650176716`*^9, 3.8313106000589523`*^9, {
    3.831310657484271*^9, 3.8313106819677787`*^9}, 3.8313107252907157`*^9, 
@@ -2130,6 +2175,7 @@ Cell[BoxData[
   "Fidelity = ", 0.9999991123329718, ", \[CapitalDelta]t = ", 
    0.00040001`5.831767092433911, " min"],
   Editable->False]], "Print",
+ InitializationCell->True,
  CellChangeTimes->{
   3.8313104983556857`*^9, 3.8313105650176716`*^9, 3.8313106000589523`*^9, {
    3.831310657484271*^9, 3.8313106819677787`*^9}, 3.8313107252907157`*^9, 
@@ -2139,6 +2185,7 @@ Cell[BoxData[
    3.8347498021165657`*^9}, {3.834749881978837*^9, 3.834749902477083*^9}}],
 
 Cell[BoxData["\<\"Target state found!\"\>"], "Print",
+ InitializationCell->True,
  CellChangeTimes->{
   3.8313104983556857`*^9, 3.8313105650176716`*^9, 3.8313106000589523`*^9, {
    3.831310657484271*^9, 3.8313106819677787`*^9}, 3.8313107252907157`*^9, 
@@ -2148,6 +2195,7 @@ Cell[BoxData["\<\"Target state found!\"\>"], "Print",
    3.8347498021165657`*^9}, {3.834749881978837*^9, 3.834749902477083*^9}}],
 
 Cell[BoxData["\<\"Target state =\"\>"], "Print",
+ InitializationCell->True,
  CellChangeTimes->{
   3.8313104983556857`*^9, 3.8313105650176716`*^9, 3.8313106000589523`*^9, {
    3.831310657484271*^9, 3.8313106819677787`*^9}, 3.8313107252907157`*^9, 
@@ -2165,6 +2213,7 @@ Cell[BoxData[
     RowBox[{"1", ",", "1", ",", "1", ",", "1"}], "}"}], ",", 
    RowBox[{"{", 
     RowBox[{"2", ",", "2", ",", "2", ",", "2"}], "}"}]}], "}"}]], "Print",
+ InitializationCell->True,
  CellChangeTimes->{
   3.8313104983556857`*^9, 3.8313105650176716`*^9, 3.8313106000589523`*^9, {
    3.831310657484271*^9, 3.8313106819677787`*^9}, 3.8313107252907157`*^9, 
@@ -2174,6 +2223,7 @@ Cell[BoxData[
    3.8347498021165657`*^9}, {3.834749881978837*^9, 3.8347499024850845`*^9}}],
 
 Cell[BoxData["\<\"Obtained state = \"\>"], "Print",
+ InitializationCell->True,
  CellChangeTimes->{
   3.8313104983556857`*^9, 3.8313105650176716`*^9, 3.8313106000589523`*^9, {
    3.831310657484271*^9, 3.8313106819677787`*^9}, 3.8313107252907157`*^9, 
@@ -2199,6 +2249,7 @@ Cell[BoxData[
    RowBox[{"\<\"b\"\>", "[", "2", "]"}], " ", 
    RowBox[{"\<\"c\"\>", "[", "2", "]"}], " ", 
    RowBox[{"\<\"d\"\>", "[", "2", "]"}]}]}]], "Print",
+ InitializationCell->True,
  CellChangeTimes->{
   3.8313104983556857`*^9, 3.8313105650176716`*^9, 3.8313106000589523`*^9, {
    3.831310657484271*^9, 3.8313106819677787`*^9}, 3.8313107252907157`*^9, 
@@ -2208,6 +2259,7 @@ Cell[BoxData[
    3.8347498021165657`*^9}, {3.834749881978837*^9, 3.8347499025010805`*^9}}],
 
 Cell[BoxData["\<\"Graph weights:\"\>"], "Print",
+ InitializationCell->True,
  CellChangeTimes->{
   3.8313104983556857`*^9, 3.8313105650176716`*^9, 3.8313106000589523`*^9, {
    3.831310657484271*^9, 3.8313106819677787`*^9}, 3.8313107252907157`*^9, 
@@ -2245,6 +2297,7 @@ Cell[BoxData[
      RowBox[{"2", ",", "2", ",", "\<\"c\"\>", ",", "\<\"d\"\>"}], "]"}], 
     "\[Rule]", 
     RowBox[{"-", "0.7722034035688973`"}]}]}], "}"}]], "Print",
+ InitializationCell->True,
  CellChangeTimes->{
   3.8313104983556857`*^9, 3.8313105650176716`*^9, 3.8313106000589523`*^9, {
    3.831310657484271*^9, 3.8313106819677787`*^9}, 3.8313107252907157`*^9, 
@@ -2260,6 +2313,7 @@ Cell[BoxData[
   SequenceForm[
   "Total time optimization = ", 0.001778885`6.1788141212687835, " min"],
   Editable->False]], "Print",
+ InitializationCell->True,
  CellChangeTimes->{
   3.8313104983556857`*^9, 3.8313105650176716`*^9, 3.8313106000589523`*^9, {
    3.831310657484271*^9, 3.8313106819677787`*^9}, 3.8313107252907157`*^9, 
@@ -2277,6 +2331,7 @@ Cell[BoxData[
   "Total time(problem generation + optimization) = ", 
    0.0029778266666666667`6.0046256542824405, " min"],
   Editable->False]], "Print",
+ InitializationCell->True,
  CellChangeTimes->{
   3.8313104983556857`*^9, 3.8313105650176716`*^9, 3.8313106000589523`*^9, {
    3.831310657484271*^9, 3.8313106819677787`*^9}, 3.8313107252907157`*^9, 
@@ -2307,90 +2362,145 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[580, 22, 89, 1, 150, "Title"],
-Cell[672, 25, 211, 4, 84, "Subtitle"],
+Cell[580, 22, 116, 2, 150, "Title",
+ InitializationCell->True],
+Cell[699, 26, 238, 5, 84, "Subtitle",
+ InitializationCell->True],
 Cell[CellGroupData[{
-Cell[908, 33, 165, 2, 106, "Section"],
+Cell[962, 35, 192, 3, 106, "Section",
+ InitializationCell->True],
 Cell[CellGroupData[{
-Cell[1098, 39, 100, 1, 72, "Subsection"],
-Cell[1201, 42, 1355, 34, 161, "Text"],
-Cell[2559, 78, 3637, 95, 162, "Input"],
-Cell[6199, 175, 108, 1, 45, "Text"],
-Cell[6310, 178, 391, 8, 45, "Input"],
-Cell[6704, 188, 243, 4, 45, "Text"],
+Cell[1179, 42, 127, 2, 72, "Subsection",
+ InitializationCell->True],
+Cell[1309, 46, 1349, 34, 161, "Text",
+ InitializationCell->True],
+Cell[2661, 82, 3664, 96, 186, "Input",
+ InitializationCell->True],
+Cell[6328, 180, 135, 2, 45, "Text",
+ InitializationCell->True],
+Cell[6466, 184, 418, 9, 69, "Input",
+ InitializationCell->True],
+Cell[6887, 195, 270, 5, 45, "Text",
+ InitializationCell->True],
 Cell[CellGroupData[{
-Cell[6972, 196, 7140, 116, 220, "Input"],
+Cell[7182, 204, 7167, 117, 244, "Input",
+ InitializationCell->True],
 Cell[CellGroupData[{
-Cell[14137, 316, 4143, 63, 34, "Print"],
-Cell[18283, 381, 3823, 54, 34, "Print"],
-Cell[22109, 437, 3823, 54, 34, "Print"],
-Cell[25935, 493, 3815, 54, 34, "Print"]
+Cell[14374, 325, 4170, 64, 34, "Print",
+ InitializationCell->True],
+Cell[18547, 391, 3850, 55, 34, "Print",
+ InitializationCell->True],
+Cell[22400, 448, 3850, 55, 34, "Print",
+ InitializationCell->True],
+Cell[26253, 505, 3842, 55, 34, "Print",
+ InitializationCell->True]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[29811, 554, 419, 5, 72, "Subsection"],
-Cell[30233, 561, 1081, 18, 188, "Text"],
-Cell[31317, 581, 8753, 233, 800, "Input"],
-Cell[40073, 816, 427, 7, 74, "Text"],
-Cell[40503, 825, 5436, 136, 481, "Input"],
+Cell[30156, 567, 446, 6, 72, "Subsection",
+ InitializationCell->True],
+Cell[30605, 575, 1108, 19, 188, "Text",
+ InitializationCell->True],
+Cell[31716, 596, 8799, 238, 853, "Input",
+ InitializationCell->True],
+Cell[40518, 836, 454, 8, 74, "Text",
+ InitializationCell->True],
+Cell[40975, 846, 5463, 137, 505, "Input",
+ InitializationCell->True],
 Cell[CellGroupData[{
-Cell[45964, 965, 2189, 43, 191, "Input"],
+Cell[46463, 987, 2216, 44, 215, "Input",
+ InitializationCell->True],
 Cell[CellGroupData[{
-Cell[48178, 1012, 2813, 41, 34, "Print"],
-Cell[50994, 1055, 2877, 42, 34, "Print"],
-Cell[53874, 1099, 2887, 42, 34, "Print"],
-Cell[56764, 1143, 2857, 42, 34, "Print"],
-Cell[59624, 1187, 2951, 44, 34, "Print"]
+Cell[48704, 1035, 2840, 42, 34, "Print",
+ InitializationCell->True],
+Cell[51547, 1079, 2904, 43, 34, "Print",
+ InitializationCell->True],
+Cell[54454, 1124, 2914, 43, 34, "Print",
+ InitializationCell->True],
+Cell[57371, 1169, 2884, 43, 34, "Print",
+ InitializationCell->True],
+Cell[60258, 1214, 2978, 45, 34, "Print",
+ InitializationCell->True]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[62636, 1238, 152, 2, 72, "Subsection"],
-Cell[62791, 1242, 3732, 93, 687, "Text"],
+Cell[63297, 1266, 179, 3, 72, "Subsection",
+ InitializationCell->True],
+Cell[63479, 1271, 3660, 91, 687, "Text",
+ InitializationCell->True],
 Cell[CellGroupData[{
-Cell[66548, 1339, 5524, 124, 510, "Input"],
+Cell[67164, 1366, 5551, 125, 534, "Input",
+ InitializationCell->True],
 Cell[CellGroupData[{
-Cell[72097, 1467, 2052, 30, 34, "Print"],
-Cell[74152, 1499, 2066, 31, 34, "Print"],
-Cell[76221, 1532, 2137, 31, 34, "Print"]
+Cell[72740, 1495, 2079, 31, 34, "Print",
+ InitializationCell->True],
+Cell[74822, 1528, 2093, 32, 34, "Print",
+ InitializationCell->True],
+Cell[76918, 1562, 2164, 32, 34, "Print",
+ InitializationCell->True]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[78419, 1570, 319, 4, 72, "Subsection"],
-Cell[78741, 1576, 212, 4, 45, "Text"],
-Cell[78956, 1582, 1468, 33, 139, "Input"]
+Cell[79143, 1601, 346, 5, 72, "Subsection",
+ InitializationCell->True],
+Cell[79492, 1608, 239, 5, 45, "Text",
+ InitializationCell->True],
+Cell[79734, 1615, 1495, 34, 163, "Input",
+ InitializationCell->True]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[80473, 1621, 118, 2, 106, "Section"],
-Cell[80594, 1625, 520, 8, 131, "Text"],
+Cell[81278, 1655, 145, 3, 106, "Section",
+ InitializationCell->True],
+Cell[81426, 1660, 547, 9, 131, "Text",
+ InitializationCell->True],
 Cell[CellGroupData[{
-Cell[81139, 1637, 901, 20, 162, "Input"],
-Cell[82043, 1659, 286, 4, 45, "Output"],
-Cell[82332, 1665, 493, 9, 34, "Print"]
+Cell[81998, 1673, 928, 21, 186, "Input",
+ InitializationCell->True],
+Cell[82929, 1696, 313, 5, 45, "Output",
+ InitializationCell->True],
+Cell[83245, 1703, 520, 10, 34, "Print",
+ InitializationCell->True]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[82874, 1680, 178, 2, 106, "Section"],
-Cell[83055, 1684, 1269, 21, 330, "Text"],
+Cell[83814, 1719, 205, 3, 106, "Section",
+ InitializationCell->True],
+Cell[84022, 1724, 1296, 22, 330, "Text",
+ InitializationCell->True],
 Cell[CellGroupData[{
-Cell[84349, 1709, 15611, 373, 2163, "Input"],
+Cell[85343, 1750, 15638, 374, 2187, "Input",
+ InitializationCell->True],
 Cell[CellGroupData[{
-Cell[99985, 2086, 532, 7, 34, "Print"],
-Cell[100520, 2095, 946, 17, 34, "Print"],
-Cell[101469, 2114, 527, 7, 34, "Print"],
-Cell[101999, 2123, 885, 15, 34, "Print"],
-Cell[102887, 2140, 523, 7, 34, "Print"],
-Cell[103413, 2149, 520, 7, 34, "Print"],
-Cell[103936, 2158, 761, 15, 34, "Print"],
-Cell[104700, 2175, 521, 7, 34, "Print"],
-Cell[105224, 2184, 1187, 23, 34, "Print"],
-Cell[106414, 2209, 520, 7, 34, "Print"],
-Cell[106937, 2218, 1493, 35, 34, "Print"],
-Cell[108433, 2255, 770, 13, 34, "Print"],
-Cell[109206, 2270, 842, 15, 34, "Print"]
+Cell[101006, 2128, 559, 8, 34, "Print",
+ InitializationCell->True],
+Cell[101568, 2138, 973, 18, 34, "Print",
+ InitializationCell->True],
+Cell[102544, 2158, 554, 8, 34, "Print",
+ InitializationCell->True],
+Cell[103101, 2168, 912, 16, 34, "Print",
+ InitializationCell->True],
+Cell[104016, 2186, 550, 8, 34, "Print",
+ InitializationCell->True],
+Cell[104569, 2196, 547, 8, 34, "Print",
+ InitializationCell->True],
+Cell[105119, 2206, 788, 16, 34, "Print",
+ InitializationCell->True],
+Cell[105910, 2224, 548, 8, 34, "Print",
+ InitializationCell->True],
+Cell[106461, 2234, 1214, 24, 34, "Print",
+ InitializationCell->True],
+Cell[107678, 2260, 547, 8, 34, "Print",
+ InitializationCell->True],
+Cell[108228, 2270, 1520, 36, 34, "Print",
+ InitializationCell->True],
+Cell[109751, 2308, 797, 14, 34, "Print",
+ InitializationCell->True],
+Cell[110551, 2324, 869, 16, 34, "Print",
+ InitializationCell->True]
 }, Open  ]]
 }, Open  ]]
 }, Open  ]]
